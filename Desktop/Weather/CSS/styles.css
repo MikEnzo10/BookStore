@@ -1,0 +1,118 @@
+.container{
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-wrap: wrap;
+    
+}
+
+
+.imagenCiudades {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: black 15px 5px 30px 20px;
+    border: black solid 1px;
+    z-index: -1;
+    
+}
+
+.nombreCiudad {
+    
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    color:beige;
+    text-shadow: 2px 2px black;
+    font-family: "calibri";
+    margin-top: -240px;
+    z-index: 1;
+    
+}
+
+/*
+#imagenes {
+    margin-bottom: 20px;
+}
+*/
+
+
+
+
+/*
+.imagenCiudades {
+    border-radius: 20px;
+    box-shadow: black 15px 5px 30px; 20px;
+    border-style:none;
+    width: 250px;
+    height: 200px;
+    border: solid 1px;
+    border-color: black;
+    position: relative;
+    top: -104px;
+    z-index: -1;
+*/
+    
+    
+    
+/*}*/
+
+/*
+
+#imagenes {
+    padding: 8px;
+    margin-bottom: 20px;
+    max-height: 245px;
+    align-items: center;
+    
+         
+    
+    
+}
+*/
+
+
+.descripcion {
+    position: relative;
+   color:white;
+    background-image: linear-gradient(crimson, black);
+    font-weight: bold;
+    z-index: 1;
+    width: 98%;
+    border-radius: 10px 10px;
+    top: -500px;
+    
+    
+/*
+    display: -webkit-flex;
+    display: flex;
+   -webkit-flex-wrap: wrap; 
+    top: -500px;
+    width: 98%;
+    border-radius: 10px 10px;
+*/
+  
+}
+
+.temperatura {
+    
+    position: relative;
+    text-align: center ;
+    color:beige;
+    text-shadow: 2px 2px black;
+    font-family: "calibri";
+    top: -100px;
+    z-index: 1;
+}
+
+
+.iconos {
+   position: relative;
+    z-index: 1;
+    top: -1540px;
+    left: 200px;
+
+    
+    
+    
+}
