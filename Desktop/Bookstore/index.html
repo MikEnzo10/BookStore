@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <img class="imagenBook" id="logo" src="Images/logo%20bookstore1.png" alt="Logo Bookstore">
+                <div class="buscador">
+                    <input v-on:keyup = "obtenerInput()" type="text" v-model="search" placeholder="Search" id="miBusqueda" name="libro" value="">
+                    <button @click="obtenerInput()">Search</button>
+                </div>         
+        </header>
+        <hr>
+        <div class="wrap">
+            <div v-for="book in displayBook" class="tarjeta-wrap">
+                <div class="tarjeta">
+                    <div class="adelante">
+                        <img class="portadas" :src="book.cover">
+                    </div>
+                    <div class="atras">
+                        <h1 id="titulo">{{ book.title }}</h1>
+                        <p id="descripcion">{{book.description}}</p>
+                        <button><a :src="book.details">More Information</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="JS/main.js"></script>
+</body>
+
+</html>
